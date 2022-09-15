@@ -1,0 +1,8 @@
+batch
+
+deploy /opt/jdbc/mariadb-java-client-3.0.7.jar
+
+data-source add --name=MovieDSmaria --jndi-name=java:/movieDS --driver-name=mariadb-java-client-3.0.7.jar --connection-url=jdbc:mariadb://db:3306/dbmovie --user-name=movie --password=azerty123!! --max-pool-size=15 --min-pool-size=5 --use-ccm=true --blocking-timeout-wait-millis=5000 --enabled=true  
+
+run-batch
+
