@@ -9,7 +9,7 @@ https://www.jenkins.io/doc/book/pipeline/syntax/
 Run docker mariadb with a movie db (tables and data)
 
 ## commandes docker
-
+docker compose down
 docker compose build --no-cache --progress=plain  // creation de l'image
 
 NB: Copy artifact moviapi.jar in this directory.
